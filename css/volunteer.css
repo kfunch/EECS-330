@@ -1,0 +1,31 @@
+.sidebar {
+	float: left;
+}
+
+.main {
+	float: left;
+	padding-left:20px; 
+	border-left: 1px solid #ddd;
+}
+
+.panel a:hover {
+	font-weight: bold;	
+}
+
+.panel a:link, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+
+.panel {
+	margin-bottom: 0px;
+}
+
+.page-header {
+	font-size: 44px;
+	border-bottom: 1px solid #ddd;
+}
+
+img {
+	height: 80px;
+	width: 120px;
+}
