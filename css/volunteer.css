@@ -8,10 +8,6 @@
 	border-left: 1px solid #ddd;
 }
 
-.panel a:hover {
-	font-weight: bold;	
-}
-
 .panel a:link, a:hover, a:active, a:visited {
 	text-decoration: none;
 }
@@ -28,4 +24,26 @@
 img {
 	height: 80px;
 	width: 120px;
+}
+
+.datepicker {
+	float: right;
+}
+
+.panel-heading:hover {
+	cursor: pointer;
+}
+
+.panel-heading {
+	background-color: #1FCECB;
+	border-color: #46b8da;
+	color: black;
+}
+
+.btn {
+	color: #A73E5C;
+}
+
+#noOpportunities {
+	display: none;
 }
