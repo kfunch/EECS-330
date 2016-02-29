@@ -1,0 +1,19 @@
+.btn-info{
+	margin-bottom: 2em;
+}
+
+.page-header {
+	font-size: 44px;
+}
+
+.table-bordered{
+	margin-right: 5em;
+}
+thead{
+	background-color: rgb(167,62,92);
+}
+
+#slots{
+	text-align: center;
+}
+
