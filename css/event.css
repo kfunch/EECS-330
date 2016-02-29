@@ -3,7 +3,9 @@
 }
 
 .table-bordered{
-	margin-right: 5em;
+	margin-left: 3em;
+	font-size: 125%;
+	width: 90%;
 }
 
 thead{
