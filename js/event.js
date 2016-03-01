@@ -11,4 +11,22 @@ $(document).ready(function(){
     		$("#star").addClass("glyphicon-star-empty");
     	}
     });
+
+    $("#signUp").click(function() {
+        $("timeSlots").hide();
+    });
+
+    $("input[name='optradio']").change(function(){
+        $("#noSelection").hide();
+    });
+
+    $('#signUp').on('click', function (ev) {
+        if ($("input:radio[name='optradio']").is(":checked")) {
+            $("#myModal").modal("show");
+            $("#timeSlots").html("You've signed up for " + $("input[name='optradio']:checked").val() + "!");
+   html  }
+        else {
+            $("#noSelection").show();
+        }
+    });
 });

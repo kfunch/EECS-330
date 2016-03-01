@@ -68,6 +68,7 @@ Powder Blue: 31 206 203
   <div class="col-sm-12 col-md-10">
     <h1 class="page-header">Evanston Street Fair</h1>
     <button type="button" class="btn" id="remindMe" data-toggle="tooltip" title="Not yet implemented."><b>Remind Me</b></button>
+    &nbsp;
     <button type="button" class="btn" id="save"><b>Save <span id="star" class="glyphicon glyphicon-star-empty"></span></b></button>
 <div class="container-fluid">
    <div class="table-responsive">
@@ -104,17 +105,20 @@ Powder Blue: 31 206 203
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-0 col-md-4"></div>
-              <div class="col-sm-12 col-md-4">
+              <div class="col-sm-12 col-md-4" id="timeSlots">
            		 <div class="radio">
-           			<label><input type="radio" name="optradio">Saturday, May 21 10 am - 1 pm</label>
+           			<label><input type="radio" name="optradio" value="May 21, 10am - 1pm">Saturday, May 21 10 am - 1 pm</label>
            		 </div>
            		 <div class="radio">
-           			<label><input type="radio" name="optradio">Saturday, May 21 1 pm - 4 pm</label>
+           			<label><input type="radio" name="optradio" value="May 21, 1pm - 4pm">Saturday, May 21 1 pm - 4 pm</label>
            		 </div>
            		 <div class="radio">
-           			<label><input type="radio" name="optradio">Saturday, May 21 4 pm - 7 pm</label>
+           			<label><input type="radio" name="optradio" value="May 21, 4pm - 7pm">Saturday, May 21 4 pm - 7 pm</label>
            		 </div>
-           		 <button type="button" class="btn" id="signUp" data-toggle="modal" data-target="#myModal"><b>Sign Up!</b></button>
+           		 <button type="button" class="btn" id="signUp"><b>Sign Up!</b></button>
+               <p>
+               <span id="noSelection">Please select a time slot.</span>&nbsp;
+               </p>
               </div>
             <div class="col-sm-0 col-md-4"></div>
           </div>
