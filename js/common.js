@@ -4,8 +4,8 @@ document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-
 	<div class="loginmodal-container"> \
 	  <h1>Welcome to NU :)</h1><br> \
 	  <form> \
-	    <input type="text" name="user" placeholder="Username"> \
-	    <input type="password" name="pass" placeholder="Password"> \
+	    <input type="text" name="user" placeholder="Username" value="wildcat200"> \
+	    <input type="password" name="pass" placeholder="Password" value="you never know"> \
 	    <input type="submit" name="login" class="login loginmodal-submit" value="Login"> \
 	  </form> \
 	  <div class="login-help"> \
@@ -18,3 +18,4 @@ document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-
 login = document.getElementById('login');
 login.setAttribute('data-toggle', "modal");
 login.setAttribute('data-target', "#login-modal");
+
