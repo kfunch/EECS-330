@@ -1,4 +1,16 @@
-document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" \
+login = document.getElementById('login');
+register = document.getElementById('register');
+
+if (document.cookie && (document.cookie != "not set")) {
+    register.innerHTML = '<span class="glyphicon glyphicon-user"></span> ' + document.cookie;
+    login.innerHTML = '<span class="glyphicon glyphicon-log-in"></span> Logout';
+    login.onclick = function () {
+        document.cookie = "not set";
+        location.reload();
+    }
+}
+else {
+    document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" \
          aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"> \
       <div class="modal-dialog"> \
 	<div class="loginmodal-container"> \
@@ -13,25 +25,12 @@ document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-
 	  </div> \
 	</div> \
       </div> \
-</div>'
-
-login = document.getElementById('login');
-register = document.getElementById('register');
-
-if (document.cookie) {
-    register.innerHTML = '<span class="glyphicon glyphicon-user"></span> ' + document.cookie;
-    login.innerHTML = '<span class="glyphicon glyphicon-log-in"></span> Logout';
-    login.onclick = function () {
-        document.cookie = "";
-        location.reload();
-    }
-}
-else {
+</div>'    
     login.setAttribute('data-toggle', "modal");
     login.setAttribute('data-target', "#login-modal");
     submit_button = document.getElementsByName('login')[0];
     submit_button.onclick  = function () {
-        document.cookie = "Mike";
+        document.cookie = "Stark";
         location.reload();
     }
 }
