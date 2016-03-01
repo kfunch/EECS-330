@@ -24,7 +24,7 @@ $(document).ready(function(){
         if ($("input:radio[name='optradio']").is(":checked")) {
             $("#myModal").modal("show");
             $("#timeSlots").html("You've signed up for " + $("input[name='optradio']:checked").val() + "!");
-   html  }
+        }
         else {
             $("#noSelection").show();
         }
