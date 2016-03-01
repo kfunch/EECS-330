@@ -19,3 +19,10 @@ login = document.getElementById('login');
 login.setAttribute('data-toggle', "modal");
 login.setAttribute('data-target', "#login-modal");
 
+submit_button = document.getElementsByName('login')[0]
+submit_button.onclick  = function () {
+    if (document.cookie) {
+        document.cookie = "Mike";
+        location.reload();
+    }
+}
