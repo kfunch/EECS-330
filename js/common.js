@@ -16,12 +16,21 @@ document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-
 </div>'
 
 login = document.getElementById('login');
-login.setAttribute('data-toggle', "modal");
-login.setAttribute('data-target', "#login-modal");
+register = document.getElementById('register');
 
-submit_button = document.getElementsByName('login')[0]
-submit_button.onclick  = function () {
-    if (document.cookie) {
+if (document.cookie) {
+    register.innerHTML = '<span class="glyphicon glyphicon-user"></span> ' + document.cookie;
+    login.innerHTML = '<span class="glyphicon glyphicon-log-in"></span> Logout';
+    login.onclick = function () {
+        document.cookie = "";
+        location.reload();
+    }
+}
+else {
+    login.setAttribute('data-toggle', "modal");
+    login.setAttribute('data-target', "#login-modal");
+    submit_button = document.getElementsByName('login')[0];
+    submit_button.onclick  = function () {
         document.cookie = "Mike";
         location.reload();
     }
