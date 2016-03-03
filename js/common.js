@@ -1,8 +1,8 @@
 document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" \
          aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"> \
-      <div class="modal-dialog"> \
+      <div id="login_dialog" class="modal-dialog"> \
 	<div class="loginmodal-container"> \
-	  <h1>Welcome to NU :)</h1><br> \
+	  <h1 id="login-title">Welcome to NU :)</h1><br> \
 	  <form> \
 	    <input type="text" name="user" placeholder="Username" value="wildcat200"> \
 	    <input type="password" name="pass" placeholder="Password" value="you never know"> \
@@ -15,8 +15,20 @@ document.body.innerHTML += '<div class="modal fade" id="login-modal" tabindex="-
       </div> \
 </div>'
 
+
 login = document.getElementById('login');
 register = document.getElementById('register');
+
+submit = document.getElementsByName('login')[0]
+submit.style.backgroundColor = '#1FCECB'
+submit.style.fontFamily = 'sans-serif'
+
+// login_modal = document.getElementById('login-modal')
+// login_modal.style.fontFamily = 'sans-serif'
+
+login_title = document.getElementById('login-title')
+login_title = login_title.style.fontFamily = 'sans-serif'
+
 
 if (document.cookie && (document.cookie != "not set")) {
     register.innerHTML = '<span class="glyphicon glyphicon-user"></span> ' + document.cookie;
