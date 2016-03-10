@@ -16,7 +16,7 @@ thead{
 	margin-bottom: 2em;
 }
 
-#remindMe, #signUp {
+#remindMe {
 	background-color: #EC6873;
 	border-color: #AD3549;
 }
@@ -27,6 +27,11 @@ thead{
 	margin-left: -8px;
 }
 
+#signUp {
+	background-color: #EFD069;
+	border-color: #CFAE42;
+}
+
 .modal-content{
 	font-size: 120%;
 	
@@ -35,4 +40,11 @@ thead{
 #noSelection {
 	display: none;
 	color: red;
+}
+
+td {
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+	padding-left: 50px !important;
+	padding-right: 50px !important;
 }
